@@ -37,7 +37,7 @@ public class MoveAllZeroToEnd {
 
         if(j == -1 ) return arr;
 
-        for(int i=j +1;j<arr.length;i++){
+        for(int i=j +1;i<arr.length;i++){
             if((arr[i] != 0)){
                 int temp = arr[i];
                 arr[i] = arr[j];
