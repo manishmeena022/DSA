@@ -48,6 +48,22 @@ public class MoveAllZeroToEnd {
         return arr;
     }
 
+    public static void moveZerosToEnd(int[] arr) {
+        int nonZeroIndex = 0; // Index to place the next non-zero element
+
+        // Traverse the array
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != 0) {
+                // Swap non-zero element with the element at nonZeroIndex
+                int temp = arr[nonZeroIndex];
+                arr[nonZeroIndex] = arr[i];
+                arr[i] = temp;
+                nonZeroIndex++;
+            }
+        }
+    }
+
+
     public static void print(int arr[]){
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i] + " ");
