@@ -12,7 +12,7 @@ public class TwoSum{
         return false;
     }
 
-    public static int[] twoSum(int arr[], int s){
+    public static int[] TwoSum(int arr[], int s){
         int n = arr.length;
         int arr1[] = new int[2];
         arr1[0] = arr1[1] = -1;
@@ -29,7 +29,7 @@ public class TwoSum{
         return arr;
     }
 
-    public static String twosum(int arr[], int target){
+    public static String twoSum(int arr[], int target){
         HashMap<Integer, Integer> mp = new HashMap<>();
 
         for(int i=0;i<arr.length;i++){
@@ -43,27 +43,28 @@ public class TwoSum{
         return  "NO";
     }
 
-    public static int[] twosum(int arr[], int s){
+    public static int[] twosum(int arr[], int s) {
         int n = arr.length;
         int ans[] = new int[2];
         ans[0] = ans[1] = -1;
 
         HashMap<Integer, Integer> mp = new HashMap<>();
 
-        for(int i=0;i<n;i++){
+        for (int i = 0; i < n; i++) {
             int num = arr[i];
             int remSum = s - num;
-            if(mp.containsKey(remSum)){
-                ans[0]  = mp.get(remSum);
+            if (mp.containsKey(remSum)) {
+                ans[0] = mp.get(remSum);
                 ans[1] = i;
                 return ans;
             }
             mp.put(arr[i], i);
         }
         return ans;
+    }
 
 
-        public static String twoSum(int arr[], int target){
+    public static String Twosum(int arr[], int target){
             int n = arr.length;
             Arrays.sort(arr);
             int left = 0 , right = n -1;
