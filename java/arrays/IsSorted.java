@@ -1,5 +1,3 @@
-package DSA.java.arrays;
-
 public class IsSorted {
     
     public static boolean isSorted(int arr[]){

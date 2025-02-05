@@ -1,5 +1,3 @@
-package DSA.java.arrays;
-
 public class SecondLargest {
 
     public static int secondLargest(int arr[]){

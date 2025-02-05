@@ -1,5 +1,3 @@
-package DSA.java.arrays;
-
 public class RotateArrayByK {
 
     public static void rotateArray(int arr[],int n, int k){
