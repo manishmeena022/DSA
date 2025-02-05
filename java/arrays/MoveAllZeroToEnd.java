@@ -1,5 +1,3 @@
-package DSA.java.arrays;
-
 import java.util.ArrayList;
 
 public class MoveAllZeroToEnd {

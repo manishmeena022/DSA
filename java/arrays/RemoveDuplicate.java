@@ -1,5 +1,3 @@
-package DSA.java.arrays;
-
 import java.util.HashSet;
 
 public class RemoveDuplicate {

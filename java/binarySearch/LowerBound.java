@@ -21,6 +21,6 @@ public class LowerBound {
     }
     public static void main(String args[]){
         int arr[] = {3,5,8,15,19};
-        System.out.println(findLowerBound, 9);
+        System.out.println(findLowerBound(arr, 9));
     }
 }
