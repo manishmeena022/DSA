@@ -11,6 +11,29 @@ public class ReverseArray {
         return temp;
     }
 
+    // Without using extra array.
+    private void reverseArr(int arr[]) {
+        // code here
+        int n = arr.length;
+        
+        for(int i=0;i<n/2;i++){
+            int temp = arr[i];
+            arr[i] = arr[n-i-1];
+            arr[n-i-1] = temp;
+        }
+    }
+
+    // Using Recursion.
+    private static void reverseArrayRecursion(int[] arr, int start, int end){
+        if(start >= end){
+            return;
+        }
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        reverseArrayRecursion(arr, start+1, end-1);
+    }
+
     private static void printArray(int[] arr, int n){
         for(int i=0;i<n;i++){
             System.out.print(arr[i] + " ");
