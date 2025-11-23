@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HashMp",
+            "request": "launch",
+            "mainClass": "java.hashing.HashMp",
+            "projectName": "DSA_a523ec56"
+        },
+        {
+            "type": "java",
+            "name": "Heaps",
+            "request": "launch",
+            "mainClass": "java.heaps.Heaps",
+            "projectName": "DSA_a523ec56"
+        },
+        {
+            "type": "java",
+            "name": "PQ",
+            "request": "launch",
+            "mainClass": "java.queues.priorityQueues.PQ",
+            "projectName": "DSA_a523ec56"
+        },
+        {
+            "type": "java",
             "name": "BinaryTreesB",
             "request": "launch",
             "mainClass": "java.binaryTrees.BinaryTreesB",
